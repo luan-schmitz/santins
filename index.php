@@ -8,40 +8,44 @@
         <meta name="theme-color" content="#ffffff"/>
         <title>Santins</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-        <link rel="icon" href="/imgs/favicon.png" type="image/png" sizes="100x100">
+        <link rel="icon" href="http://localhost:8080/imgs/favicon.png" type="image/png" sizes="100x100">
         <!-- Og tags -->
         <meta name="title" content="Santins">
         <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ad quo dolorem quia reiciendis saepe a ipsam, eligendi, adipisci nulla obcaecati neque dolore fugiat laborum cumque consequuntur vero eum accusantium.">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://localhost:8080/">
+        <meta property="og:url" content="http://localhost:8080/">
         <meta property="og:title" content="Santins">
         <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ad quo dolorem quia reiciendis saepe a ipsam, eligendi, adipisci nulla obcaecati neque dolore fugiat laborum cumque consequuntur vero eum accusantium.">
-        <meta property="og:image" content="https://localhost:8080/imgs/social-share.png"> 
+        <meta property="og:image" content="#"> 
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://localhost:8080">
         <meta property="twitter:title" content="Santins">
         <meta property="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur ad quo dolorem quia reiciendis saepe a ipsam, eligendi, adipisci nulla obcaecati neque dolore fugiat laborum cumque consequuntur vero eum accusantium.">
-        <meta property="twitter:image" content="https://localhost:8080/imgs/social-share.png">
+        <meta property="twitter:image" content="#">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/files/style.css">
     </head>
     <body>
-        <section>
-            <div class="container">
-                <div class="row">
+        <section class="top">
+            <div class="container py-3">
+                <div class="row align-items-center">
                     <div class="col-9 col-md-3">
-                        <a href="#"><img src="#" alt="Santins Logo"></a>
+                        <a href="#"><img src="/imgs/logo.png" alt="Santins Logo" class="img-fluid" width="220"></a>
                     </div>
                     <div class="col-3 col-md-9">
                         <nav>
-                            <button type="button">
-                                togle
+                            <button type="button" class="d-md-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
                             </button>
                             <div class="nav-home text-end">
                                 <a href="#">A EMPRESA</a>
                                 <a href="#">NOSSOS FUNDOS</a>
                                 <a href="#">CONTEÚDOS</a>
                                 <a href="#">CONTATO</a>
-                                <a href="#">FAÇA LOGIN</a>
-                                <a href="#">INVISTA AGORA</a>
+                                <a href="#" class="btn btn2">FAÇA LOGIN</a>
+                                <a href="#" class="btn btn1">INVISTA AGORA</a>
                             </div>
                         </nav>
                     </div>
@@ -52,7 +56,7 @@
                     <div class="col-12 col-md-8 col-lg-6">
                         <h1>SANTINS</h1>
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit...</h2>
-                        <a href="#">SAIBA MAIS</a>
+                        <a href="#" class="btn btn1">SAIBA MAIS</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +66,7 @@
                 <div class="col-12 col-md-6 offset-md-6">
                     <h2>A empresa</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ducimus temporibus architecto repellat vero ullam, est maiores. Quam maxime numquam accusamus nam eum, atque eligendi quia explicabo, itaque, ratione quaerat. <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Autem consequuntur delectus molestiae dicta nam laudantium pariatur quaerat quia commodi, voluptate qui deleniti, esse sit! Repellat ea nihil itaque voluptas iusto?</p>
-                    <a href="#">SABER MAIS</a>
+                    <a href="#" class="btn btn1">SABER MAIS</a>
                 </div>
             </div>
         </section>
@@ -107,6 +111,8 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section>
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-7">
@@ -122,8 +128,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section>
             <div class="container">
                 <div class="row">
                     <h2>Fundos</h2>
@@ -148,7 +152,7 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam, dolore nam labore provident, explicabo vel facere blanditiis amet beatae magni tempore voluptates. Nihil tenetur quaerat necessitatibus exercitationem aliquid vel.</p>
                     </div>
                     <div class="col-12">
-                        <a href="#">SABER MAIS</a>
+                        <a href="#" class="btn btn1">SABER MAIS</a>
                     </div>
                 </div>
             </div>
