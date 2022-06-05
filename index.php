@@ -28,10 +28,12 @@
         <link rel="stylesheet" href="/files/style.css">
     </head>
     <body>
+        <h1 class="d-none">SANTINS</h1>
         <section class="top">
             <div class="container py-3">
                 <div class="row align-items-center">
                     <div class="col-9 col-md-3">
+                        <h2 class="d-none">SANTINS</h2>
                         <a href="#"><img src="/imgs/logo.png" alt="Santins Logo" class="img-fluid" width="220"></a>
                     </div>
                     <div class="col-3 col-md-9">
@@ -40,12 +42,12 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
                             </button>
                             <div class="nav-home text-end">
-                                <a href="#">A EMPRESA</a>
-                                <a href="#">NOSSOS FUNDOS</a>
-                                <a href="#">CONTEÚDOS</a>
-                                <a href="#">CONTATO</a>
-                                <a href="#" class="btn btn2">FAÇA LOGIN</a>
-                                <a href="#" class="btn btn1">INVISTA AGORA</a>
+                                <a href="#"><h3>A EMPRESA</h3></a>
+                                <a href="#"><h3>NOSSOS FUNDOS</h3></a>
+                                <a href="#"><h3>CONTEÚDOS</h3></a>
+                                <a href="#"><h3>CONTATO</h3></a>
+                                <a href="#" class="btn btn2"><h3>FAÇA LOGIN</h3></a>
+                                <a href="#" class="btn btn1"><h3>INVISTA AGORA</h3></a>
                             </div>
                         </nav>
                     </div>
@@ -54,7 +56,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 col-lg-6">
-                        <h1 class="d-none">SANTINS</h1>
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit...</h2>
                         <a href="#" class="btn btn1 btnTop">SAIBA MAIS</a>
                     </div>
@@ -70,43 +71,50 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="numbers">
+            <h2 class="d-none">Números</h2>
             <div class="container">
-                <div class="row">
+                <div class="row text-center">
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="card">
-                            <p><span>4</span></p>
-                            <p>Lorem</p>
+                            <p><span class="countShown" c-final="4">0</span></p>
+                            <hr>
+                            <h3>Lorem</h3>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="card">
-                            <p><span>100</span><small>%</small></p>
-                            <p>Lorem</p>
+                            <p><span class="countShown" c-final="100">0</span><small> %</small></p>
+                            <hr>
+                            <h3>Lorem</h3>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="card">
-                            <p><span>10</span></p>
-                            <p>Lorem</p>
+                            <p><span class="countShown" c-final="10">0</span></p>
+                            <hr>
+                            <h3>Lorem</h3>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="card">
-                            <p><span>162,6</span><small>%</small></p>
-                            <p>Lorem</p>
+                            <p><span class="countShown" c-final="162.6">0</span><small> %</small></p>
+                            <hr>
+                            <h3>Lorem<br><small>(lorem)</small></h3>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="card">
-                            <p><span>1°</span></p>
-                            <p>Lorem</p>
+                            <p><span class="countShown" c-final="1">0</span>°</p>
+                            <hr>
+                            <h3>Lorem</h3>
                         </div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-2">
                         <div class="card">
-                            <p><small>R$</small><span>162,6</span><small>MM</small></p>
-                            <p>Lorem</p>
+                            <p><small>R$</small><span class="countShown" c-final="297">0</span><small> MM</small></p>
+                            <hr>
+                            <h3>Lorem</h3>
                         </div>
                     </div>
                 </div>
@@ -210,5 +218,23 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script>
+            const counters = document.querySelectorAll('.countShown');
+            const speed = 300;
+            counters.forEach( counter => {
+            const animate = () => {
+                const value = +counter.getAttribute('c-final');
+                const data = +counter.innerText;
+                const time = value / speed;
+                if(data < value) {
+                    counter.innerText = Math.ceil(data + time);
+                    setTimeout(animate, 1);
+                }else{
+                    counter.innerText = value;
+                }
+            }
+            animate();
+            });
+        </script>
     </body>
 </html>
