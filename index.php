@@ -65,7 +65,7 @@
         <section class="about">
             <div class="container">
                 <div class="col-12 col-md-6 offset-md-6">
-                    <h2><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/><path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/></svg> A</span> empresa</h2>
+                    <h2><span><img src="/imgs/icon.png" alt="A empresa"> A</span> empresa</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ducimus temporibus architecto repellat vero ullam, est maiores. Quam maxime numquam accusamus nam eum, atque eligendi quia explicabo, itaque, ratione quaerat. <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Autem consequuntur delectus molestiae dicta nam laudantium pariatur quaerat quia commodi, voluptate qui deleniti, esse sit! Repellat ea nihil itaque voluptas iusto?</p>
                     <a href="#" class="btn btn1">SABER MAIS</a>
                 </div>
@@ -120,60 +120,64 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="money pb-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-7">
+                    <div class="col-12 col-md-7 card-white">
                         <div class="row">
                             <div class="col-12 col-md-10 col-lg-10">
-                                <h2>Fundos</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quaerat nisi asperiores, veniam officiis ipsa eaque repudiandae aspernatur assumenda aperiam omnis voluptatibus totam necessitatibus ad ullam fugit? A, dignissimos animi!</p>
+                                <h2><img src="/imgs/icon.png" alt="A empresa"> Fundos</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quaerat nisi asperiores, veniam officiis ipsa eaque repudiandae aspernatur assumenda aperiam omnis voluptatibus totam necessitatibus ad ullam fugit? A, dignissimos animi! Esse eligendi accusantium sint laboriosam temporibus? Deserunt alias quaerat laboriosam dicta sit est qui dolorem quod perferendis, ratione, optio facere, enim adipisci?</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 ms-auto">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse eligendi accusantium sint laboriosam temporibus? Deserunt alias quaerat laboriosam dicta sit est qui dolorem quod perferendis, ratione, optio facere, enim adipisci?</p>
+                    <div class="col-12 col-md-6 ms-auto card-green">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
-            <div class="container">
+            <div class="container mt-5 money-content">
                 <div class="row">
-                    <h2>Fundos</h2>
+                    <h2 class="d-none">Fundos</h2>
                     <div class="col-12 col-md-6">
-                        <img src="#" alt="Fundo 1">
+                        <img src="/imgs/money.png" alt="Fundo 1">
                         <h3>FUNDO 1</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam, dolore nam labore provident, explicabo vel facere blanditiis amet beatae magni tempore voluptates. Nihil tenetur quaerat necessitatibus exercitationem aliquid vel.</p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="#" alt="Fundo 2">
+                        <img src="/imgs/money.png" alt="Fundo 2">
                         <h3>FUNDO 2</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam, dolore nam labore provident, explicabo vel facere blanditiis amet beatae magni tempore voluptates. Nihil tenetur quaerat necessitatibus exercitationem aliquid vel.</p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="#" alt="Fundo 3">
+                        <img src="/imgs/money.png" alt="Fundo 3">
                         <h3>FUNDO 3</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam, dolore nam labore provident, explicabo vel facere blanditiis amet beatae magni tempore voluptates. Nihil tenetur quaerat necessitatibus exercitationem aliquid vel.</p>
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="#" alt="Fundo 4">
+                        <img src="/imgs/money.png" alt="Fundo 4">
                         <h3>FUNDO 4</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam, dolore nam labore provident, explicabo vel facere blanditiis amet beatae magni tempore voluptates. Nihil tenetur quaerat necessitatibus exercitationem aliquid vel.</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-12 text-center">
                         <a href="#" class="btn btn1">SABER MAIS</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
+        <section class="newsletter">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8 text-center">
-                        <h2>Inscreva-se na nossa Newsletter</h2>
-                        <form action="#" class="row">
-                            <input type="email" name="" id="" class="col-12 col-md-8">
-                            <input type="submit" value="Assinar Newsletter" class="col-12 col-md-4">
-                        </form>
+                <div class="row">
+                    <div class="col-12 text-center newsletter-back">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <h2>Inscreva-se na nossa Newsletter</h2>
+                                <form action="#" class="row">
+                                    <input type="email" name="" id="" class="col-12 col-md-8 newsletter-email" placeholder="Seu melhor Email">
+                                    <input type="submit" value="Assinar Newsletter" class="col-12 col-md-4 btn btn1 newsletter-submit">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,21 +185,23 @@
         <footer>
             <div class="container">
                 <div class="row">
+                    <div class="col-12">
+                        <h2 class="d-none">Santins</h2>
+                        <img src="/imgs/logo.png" alt="Logo Santins" class="img-fluid mb-3" width="150">
+                    </div>
                     <div class="col-12 col-md-4">
-                        <h2>Santins</h2>
-                        <img src="#" alt="Logo Santins">
-                        <p>Lorem ipsum</p>
+                        <p class="about-footer">Lorem ipsum</p>
                         <ul class="social">
-                            <li><a href="#">face</a></li>
-                            <li><a href="#">insta</a></li>
-                            <li><a href="#">twitter</a></li>
+                            <li><a href="#"><img src="/imgs/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="#"><img src="/imgs/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="#"><img src="/imgs/twitter.png" alt="Twitter"></a></li>
                         </ul>
                     </div>
                     <div class="col-12 col-md-8">
                         <div class="row">
                             <div class="col-12 col-md-4">
                                 <h3>Menu</h3>
-                                <ul>
+                                <ul class="menu-footer">
                                     <li><a href="#">A empresa</a></li>
                                     <li><a href="#">Nossos fundos</a></li>
                                     <li><a href="#">Conteúdos</a></li>
@@ -204,15 +210,15 @@
                             </div>
                             <div class="col-12 col-md-4">
                                 <h3>Contato</h3>
-                                <a href="#">contato@santins.com.br</a>
+                                <a href="mailto:contato@santins.com.br" class="contact-footer">contato@santins.com.br</a>
                             </div>
-                            <div class="col-12">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsam voluptatum unde esse quos veniam autem quod pariatur, beatae architecto inventore eaque assumenda illum distinctio dolores ratione accusamus cum? Neque?</p>
+                            <div class="col-12 mt-5">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ipsam voluptatum unde esse quos veniam autem quod pariatur.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12">
-                        <p>2022 Santins</p>
+                        <p>© 2022 Santins</p>
                     </div>
                 </div>
             </div>
