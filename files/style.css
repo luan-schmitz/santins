@@ -7,6 +7,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: var(--colorTexto);
+    scroll-behavior: smooth;
 }
 a{
     color: var(--colorTexto);
@@ -50,6 +51,28 @@ a.btn2:hover,.top .nav-home a.btn2:hover{
     background-position: center;
     background-size: cover;
 }
+.top .btnMenuMobile svg {
+    fill: var(--color2);
+    opacity: 1;
+    width: 2rem;
+    height: 2rem;
+}
+.top .btnMenuMobile {
+    margin: 0 0 0 auto;
+    display: block;
+    border: 0;
+    background: transparent;
+    opacity: 1;
+}
+.top .offcanvas-body h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    line-height: 1.1;
+}
+.top .offcanvas-body a{
+    margin-bottom: 0.5rem;
+    display: block;
+}
 .top .nav-home a{
     margin: 0 0.5rem;
     display: inline-block;
@@ -59,7 +82,7 @@ a.btn2:hover,.top .nav-home a.btn2:hover{
     color: var(--color1);
 }
 .top .nav-home a h3{
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0;
     line-height: 1.1;
     font-weight: 600;
@@ -68,18 +91,14 @@ a.btn2:hover,.top .nav-home a.btn2:hover{
     color: var(--color2);
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 3rem;
-    margin-top: 25vh;
+    font-size: 2rem;
+    margin-top: 15vh;
 }
 .top .btnTop{
     margin-top: 1rem;
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
 }
 .about{
-    background: url(/imgs/banner-about.jpg);
-    background-position: left center;
-    background-size: 45vw;
-    background-repeat: no-repeat;
     padding: 5rem 0;
 }
 .about h2 span, .fundos h2{
@@ -132,7 +151,7 @@ a.btn2:hover,.top .nav-home a.btn2:hover{
 }
 .money .card-white{
     background: var(--color2);
-    padding: 3rem;
+    padding: 2rem;
 }
 .money h2 {
     font-weight: 900;
@@ -140,12 +159,12 @@ a.btn2:hover,.top .nav-home a.btn2:hover{
 }
 .money .card-green {
     background: var(--color1);
-    padding: 3rem;
-    margin-top: -15rem;
+    padding: 2rem;
+    margin-top: 0rem;
 }
 .money .card-green p {
     color: #00193C;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 1.3;
     margin-bottom: 0;
@@ -166,19 +185,29 @@ a.btn2:hover,.top .nav-home a.btn2:hover{
     padding: 4rem 0;
     box-shadow: 0px -30px 60px -50px rgb(0 0 0 / 40%);
 }
+.newsletter .newsletter-back .row{
+    max-width: 100%;
+    margin: 0;
+}
 .newsletter h2 {
     font-weight: 600;
 }
-.newsletter .newsletter-email{
+.newsletter form{
+    max-width: 100%;
+}
+.newsletter .newsletter-email {
     border: 2px solid #E0E0E0;
-    border-radius: 5rem 0rem 0rem 5rem;
-    font-size: 1.5rem;
+    border-radius: 5rem;
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    border-right: 0;
     outline: 0;
+    max-width: 90%;
+    margin: 0 auto;
 }
 .newsletter .newsletter-submit {
-    border-radius: 0rem 5rem 5rem 0rem;
+    border-radius: 5rem;
+    max-width: 90%;
+    margin: 1rem auto 0;
 }
 footer {
     background: url(/imgs/footer.jpg);
@@ -222,4 +251,56 @@ footer .menu-footer a, footer .contact-footer {
 }
 footer .menu-footer a:hover, footer .contact-footer:hover {
     font-weight: 600;
+}
+@media (min-width: 768px) {
+    .newsletter .newsletter-email{
+        border-radius:5rem 0 0 5rem;
+        border-right: 0;
+    }
+    .newsletter .newsletter-submit {
+        margin: 0;
+        border-radius: 0 5rem 5rem 0;
+    }
+}
+@media (min-width: 992px) {
+    .about{
+        background: url(/imgs/banner-about.jpg);
+        background-position: -35vw center;
+        background-size: 80vw;
+        background-repeat: no-repeat;
+    }
+    .money .card-green{
+        margin-top: -15rem;
+    }
+    .money .card-green p{
+        font-size: 2.5rem;
+    }
+}
+@media (min-width: 1200px) {
+    .top .nav-home a h3{
+        font-size: 1rem;
+    }
+    .top h2{
+        font-size: 3rem;
+        margin-top: 20vh;
+    }
+    .top .btnTop{
+        margin-bottom: 20vh;
+    }
+    .money .card-green p {
+        font-size: 2.8rem;
+    }
+    .money .card-green {
+        padding: 4rem;
+    }
+}
+@media (min-width: 1400px) {
+    .about{
+        background-position: -25vw center;
+        background-size: 70vw;
+        padding: 10rem 0;
+    }
+    .money .card-green {
+        margin-top: -12rem;
+    }
 }

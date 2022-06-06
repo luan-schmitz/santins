@@ -27,25 +27,41 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/files/style.css">
     </head>
-    <body>
+    <body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
         <h1 class="d-none">SANTINS</h1>
         <section class="top">
             <div class="container py-3">
                 <div class="row align-items-center">
-                    <div class="col-9 col-md-3">
+                    <div class="col-8 col-lg-2 col-lx-3">
                         <h2 class="d-none">SANTINS</h2>
                         <a href="#"><img src="/imgs/logo.png" alt="Santins Logo" class="img-fluid" width="220"></a>
                     </div>
-                    <div class="col-3 col-md-9">
-                        <nav>
-                            <button type="button" class="d-md-none">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
+                    <div class="col-4 col-lg-10 col-lx-9">
+                        <nav class="position-relative">
+                            <button type="button" class="d-lg-none btnMenuMobile" data-bs-toggle="offcanvas" data-bs-target="#menuMobile" aria-controls="menuMobile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>
                             </button>
-                            <div class="nav-home text-end">
-                                <a href="#"><h3>A EMPRESA</h3></a>
-                                <a href="#"><h3>NOSSOS FUNDOS</h3></a>
-                                <a href="#"><h3>CONTEÚDOS</h3></a>
-                                <a href="#"><h3>CONTATO</h3></a>
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="menuMobile" aria-labelledby="menuMobileLabel">
+                                <div class="offcanvas-header">
+                                    <a href="#"><img src="/imgs/logo.png" alt="Santins Logo" class="img-fluid" width="150"></a>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body text-center">
+                                    <div>
+                                        <a href="#empresa"><h3>A EMPRESA</h3></a>
+                                        <a href="#fundos"><h3>NOSSOS FUNDOS</h3></a>
+                                        <a href="#conteudos"><h3>CONTEÚDOS</h3></a>
+                                        <a href="#contato"><h3>CONTATO</h3></a>
+                                        <a href="#" class="btn btn2"><h3>FAÇA LOGIN</h3></a>
+                                        <a href="#" class="btn btn1"><h3>INVISTA AGORA</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav-home text-end d-none d-lg-block">
+                                <a href="#empresa"><h3>A EMPRESA</h3></a>
+                                <a href="#fundos"><h3>NOSSOS FUNDOS</h3></a>
+                                <a href="#conteudos"><h3>CONTEÚDOS</h3></a>
+                                <a href="#contato"><h3>CONTATO</h3></a>
                                 <a href="#" class="btn btn2"><h3>FAÇA LOGIN</h3></a>
                                 <a href="#" class="btn btn1"><h3>INVISTA AGORA</h3></a>
                             </div>
@@ -55,23 +71,23 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-8 col-lg-6">
+                    <div class="col-12 col-md-8 col-xxl-6">
                         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit...</h2>
                         <a href="#" class="btn btn1 btnTop">SAIBA MAIS</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about" id="empresa">
             <div class="container">
-                <div class="col-12 col-md-6 offset-md-6">
+                <div class="col-12 col-lg-6 offset-lg-6">
                     <h2><span><img src="/imgs/icon.png" alt="A empresa"> A</span> empresa</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis ducimus temporibus architecto repellat vero ullam, est maiores. Quam maxime numquam accusamus nam eum, atque eligendi quia explicabo, itaque, ratione quaerat. <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> Autem consequuntur delectus molestiae dicta nam laudantium pariatur quaerat quia commodi, voluptate qui deleniti, esse sit! Repellat ea nihil itaque voluptas iusto?</p>
-                    <a href="#" class="btn btn1">SABER MAIS</a>
+                    <a href="#empresa" class="btn btn1">SABER MAIS</a>
                 </div>
             </div>
         </section>
-        <section class="numbers">
+        <section class="numbers" id="conteudos">
             <h2 class="d-none">Números</h2>
             <div class="container">
                 <div class="row text-center">
@@ -120,18 +136,18 @@
                 </div>
             </div>
         </section>
-        <section class="money pb-5">
+        <section class="money pb-5" id="fundos">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-7 card-white">
+                    <div class="col-12 col-lg-7 card-white">
                         <div class="row">
-                            <div class="col-12 col-md-10 col-lg-10">
+                            <div class="col-12 col-lg-10">
                                 <h2><img src="/imgs/icon.png" alt="A empresa"> Fundos</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quaerat nisi asperiores, veniam officiis ipsa eaque repudiandae aspernatur assumenda aperiam omnis voluptatibus totam necessitatibus ad ullam fugit? A, dignissimos animi! Esse eligendi accusantium sint laboriosam temporibus? Deserunt alias quaerat laboriosam dicta sit est qui dolorem quod perferendis, ratione, optio facere, enim adipisci?</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 ms-auto card-green">
+                    <div class="col-12 col-lg-6 ms-auto card-green">
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
@@ -160,12 +176,12 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat quibusdam, dolore nam labore provident, explicabo vel facere blanditiis amet beatae magni tempore voluptates. Nihil tenetur quaerat necessitatibus exercitationem aliquid vel.</p>
                     </div>
                     <div class="col-12 text-center">
-                        <a href="#" class="btn btn1">SABER MAIS</a>
+                        <a href="#empresa" class="btn btn1">SABER MAIS</a>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="newsletter">
+        <section class="newsletter" id="contato">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center newsletter-back">
@@ -173,8 +189,8 @@
                             <div class="col-12 col-md-10 col-lg-8">
                                 <h2>Inscreva-se na nossa Newsletter</h2>
                                 <form action="#" class="row">
-                                    <input type="email" name="" id="" class="col-12 col-md-8 newsletter-email" placeholder="Seu melhor Email">
-                                    <input type="submit" value="Assinar Newsletter" class="col-12 col-md-4 btn btn1 newsletter-submit">
+                                    <input type="email" name="" id="" class="col-12 col-md-7 newsletter-email" placeholder="Seu melhor Email">
+                                    <input type="submit" value="Assinar Newsletter" class="col-12 col-md-5 btn btn1 newsletter-submit">
                                 </form>
                             </div>
                         </div>
@@ -182,7 +198,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer class="text-center text-md-start">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -192,8 +208,8 @@
                     <div class="col-12 col-md-4">
                         <p class="about-footer">Lorem ipsum</p>
                         <ul class="social">
-                            <li><a href="#"><img src="/imgs/facebook.png" alt="Facebook"></a></li>
-                            <li><a href="#"><img src="/imgs/instagram.png" alt="Instagram"></a></li>
+                            <li><a href="https://www.facebook.com/santinstecnologia" target="_blank"><img src="/imgs/facebook.png" alt="Facebook"></a></li>
+                            <li><a href="https://www.instagram.com/santinsdigital/" target="_blank"><img src="/imgs/instagram.png" alt="Instagram"></a></li>
                             <li><a href="#"><img src="/imgs/twitter.png" alt="Twitter"></a></li>
                         </ul>
                     </div>
@@ -202,10 +218,10 @@
                             <div class="col-12 col-md-4">
                                 <h3>Menu</h3>
                                 <ul class="menu-footer">
-                                    <li><a href="#">A empresa</a></li>
-                                    <li><a href="#">Nossos fundos</a></li>
-                                    <li><a href="#">Conteúdos</a></li>
-                                    <li><a href="#">Contato</a></li>
+                                    <li><a href="#empresa">A empresa</a></li>
+                                    <li><a href="#fundos">Nossos fundos</a></li>
+                                    <li><a href="#conteudos">Conteúdos</a></li>
+                                    <li><a href="#contato">Contato</a></li>
                                 </ul>
                             </div>
                             <div class="col-12 col-md-4">
